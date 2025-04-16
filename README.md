@@ -21,10 +21,10 @@ Create a text file (ips.txt) containing the IP addresses to scan for SMB shares.
 
 Example (ips.txt):
 ```
-10.122.1.1
-10.122.1.2
-10.122.1.3
-10.122.1.4
+192.168.1.1
+192.168.1.2
+192.168.1.3
+192.168.1.4
 ```
 **Step 2: Run the Script**
 Save the script as AutoSmbMap.sh on your system.
@@ -46,14 +46,14 @@ The script will:
 
 **Output Files:**
 The output for each IP will be saved as smbmap_output_<ip>.txt.
-Example: `smbmap_output_10.122.1.1.txt`
+Example: `smbmap_output_192.168.1.1.txt`
 
 ## Example Output:
 ```css
-[*] Checking SMB on 10.122.1.1
-[-] Failed to run smbmap on 10.122.1.1
-[*] Checking SMB on 10.122.1.2
-[+] SMBmap output saved for 10.122.1.2 in smb_map_output/smbmap_output_10.122.1.2.txt
-[*] Checking SMB on 10.122.1.3
-[+] SMBmap output saved for 10.122.1.3 in smb_map_output/smbmap_output_10.122.1.3.txt
+[*] Checking SMB on 192.168.1.1
+[-] Failed to run smbmap on 192.168.1.1
+[*] Checking SMB on 192.168.1.2
+[+] SMBmap output saved for 192.168.1.2 in smb_map_output/smbmap_output_192.168.1.2.txt
+[*] Checking SMB on 192.168.1.3
+[+] SMBmap output saved for 192.168.1.3 in smb_map_output/smbmap_output_192.168.1.3.txt
 ```
